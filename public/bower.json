@@ -1,0 +1,29 @@
+{
+  "name": "miezuc",
+  "version": "0.0.0",
+  "authors": [
+    "Andrei Dubau <andrei.dubua@evozon.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-bootstrap": "~0.13.4",
+    "angular-sanitize": "~1.5.7",
+    "bootstrap": "~3.3.5",
+    "angular-ui-router": "~0.2.15",
+    "ng-tags-input": "3.0.0",
+    "angular-ui-select": "~0.13.2",
+    "angular-animate": "~1.4.7",
+    "materialize": "~0.97.7",
+    "components-font-awesome": "~4.4.0",
+    "moment": "~2.10.6",
+    "ng-table": "~0.8.3"
+  },
+  "resolutions": {
+    "angular": "~1.4.5"
+  }
+}
