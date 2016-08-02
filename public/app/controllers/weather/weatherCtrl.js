@@ -5,9 +5,10 @@
     .module('app')
     .controller('WeatherCtrl', WeatherCtrl);
 
-  WeatherCtrl.$inject = ['$scope'];
+  WeatherCtrl.$inject = ['$scope', '$http'];
 
-  function WeatherCtrl($scope) {
+  function WeatherCtrl($scope, $http) {
     console.log("Hello from weather ctrl");
+    
   }
 }());

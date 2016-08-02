@@ -8,6 +8,6 @@
   AppCtrl.$inject = ['$scope', '$window'];
 
   function AppCtrl($scope, $window) {
-    console.log('Hello Miezuc!');
+      console.log('Hello Miezuc!');
     };
 }());
