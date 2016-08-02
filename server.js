@@ -1,19 +1,13 @@
-//Lets require/import the HTTP module
-var http = require('http');
+// server.js
 
-//Lets define a port we want to listen to
-const PORT=8888;
+  // set up ========================
+  var express  = require('express');
+  var app      = express();                               // create our app w/ express
 
-//We need a function which handles requests and send response
-function handleRequest(request, response){
-    response.end('It Works!! Path Hit: ' + request.url);
-}
+  // configuration =================
 
-//Create a server
-var server = http.createServer(handleRequest);
+  app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
 
-//Lets start our server
-server.listen(PORT, function(){
-    //Callback triggered when server is successfully listening. Hurray!
-    console.log("Server listening on: http://localhost:%s", PORT);
-});
+  // listen (start app with node server.js) ======================================
+  app.listen(8888);
+  console.log("App listening on port 8888");
