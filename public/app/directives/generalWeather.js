@@ -24,7 +24,7 @@
 
           $http(req).then(function(res){
             scope.weatherDesc += res.data.weather[0].description;
-            scope.weatherTemp += res.data.main.temp + "°C";
+            scope.weatherTemp += res.data.main.temp;
             console.log(res.data);
           }, function(){});
           console.log(scope);

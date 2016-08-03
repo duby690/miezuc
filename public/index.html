@@ -6,11 +6,25 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="bower_components/materialize/bin/materialize.css" />
   <link rel="shortcut icon" type="image/png" href="favicon-32x32.png"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
   <!-- vsGoogleAutocomplete -->
 
 </head>
 <body>
+    <ul id="slide-out" class="side-nav">
+      <li><div class="userView">
+        <a href="#!name"><span class="white-text name">John Doe</span></a>
+        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="/#/">home</a></li>
+      <li><a href="/#/weather">Weather</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
     <div class="container">
       <div ui-view></div>
     </div>

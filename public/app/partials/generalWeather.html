@@ -8,9 +8,18 @@
                name="city"
                id="city"
                class="form-control"
-               placeholder="Enter city name" ng-change="change()" ng-model-options="{ change: 'default blur', debounce: { default: 500, blur: 0 } }">
+               placeholder="Enter city name" ng-change="change()">
       </div>
     </div>
   </div>
 </div>
-<p ng-show="city" >The temperature in <span class="blue-text text-darken-2">{{city}}</span> is <span class="red-text text-darken-4">{{weatherTemp}}</span></p>
+<div class="row">
+  <div class="col s8">
+    <h4>{{city}}</h4>
+  </div>
+  <div class="col s4">
+    <span class="red-text text-darken-4 degree-celsius">{{weatherTemp}}
+    </span>
+    <img ng-if="city" src="assets/images/material-weather-icons/64/40.png" alt="img">
+  </div>
+</div>
