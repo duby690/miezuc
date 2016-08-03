@@ -9,6 +9,7 @@ angular
     'ngSanitize',
     'ui.router',
     'ui.select',
-    'ngTable'
+    'ngTable',
+    'vsGoogleAutocomplete'
   ]);
 })();

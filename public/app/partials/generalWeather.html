@@ -1,1 +1,16 @@
-<h4>{{wii}}</h4>
+<div class="row">
+  <div class="col s6">
+    <div class="row">
+      <div class="input-field col s12">
+        <input vs-google-autocomplete="{ types:['(cities)'] }"
+               ng-model="city"
+               type="text"
+               name="city"
+               id="city"
+               class="form-control"
+               placeholder="Enter city name" ng-change="change()" ng-model-options="{ change: 'default blur', debounce: { default: 500, blur: 0 } }">
+      </div>
+    </div>
+  </div>
+</div>
+<p ng-show="city" >The temperature in <span class="blue-text text-darken-2">{{city}}</span> is <span class="red-text text-darken-4">{{weatherTemp}}</span></p>

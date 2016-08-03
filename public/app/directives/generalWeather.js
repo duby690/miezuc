@@ -11,20 +11,52 @@
     return {
       templateUrl: 'app/partials/generalWeather.html',
       link: function(scope) {
-        var myUrl = 'http://api.openweathermap.org/data/2.5/weather?id=2172797&APPID=e172458e0763cbf1d014e6d00427937a';
+        scope.change = function() {
+          console.log(scope.city);
+          var myUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + scope.city + '&units=metric&APPID=e172458e0763cbf1d014e6d00427937a';
 
-        var req = {
-         method: 'GET',
-         url: myUrl
+          var req = {
+            method: 'GET',
+            url: myUrl
+          }
+          scope.weatherDesc = "";
+          scope.weatherTemp = "";
+
+          $http(req).then(function(res){
+            scope.weatherDesc += res.data.weather[0].description;
+            scope.weatherTemp += res.data.main.temp + "°C";
+            console.log(res.data);
+          }, function(){});
+          console.log(scope);
+          scope.options = {
+            types: ['(cities)'],
+            componentRestrictions: { country: 'FR' }
+          };
+
+          scope.address = {
+            name: '',
+            place: '',
+            components: {
+              placeId: '',
+              streetNumber: '',
+              street: '',
+              city: '',
+              state: '',
+              countryCode: '',
+              country: '',
+              postCode: '',
+              district: '',
+              location: {
+                lat: '',
+                long: ''
+              }
+            }
+          };
+          console.log(scope.city);
+          if (scope.city !== 0 ) {
+            console.log(scope.city);
+          }
         }
-        scope.weatherOutside = "";
-
-        $http(req).then(function(res){
-          scope.weatherOutside += res.data.weather[0].main;
-          console.log(res.data.weather[0].description);
-          scope.wii = "The weather today is " + scope.weatherOutside;
-        }, function(){});
-
 
       }
     };

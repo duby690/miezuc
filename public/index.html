@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Miezuc app</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="bower_components/materialize/bin/materialize.css" />
   <link rel="shortcut icon" type="image/png" href="favicon-32x32.png"/>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  <!-- vsGoogleAutocomplete -->
+
 </head>
 <body>
-
-    <div ui-view></div>
+    <div class="container">
+      <div ui-view></div>
+    </div>
 
 
     <!-- LIBS -->
@@ -25,6 +30,8 @@
     <script type="text/javascript" src="bower_components/ng-table/dist/ng-table.min.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/js/dropdown.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/js/modal.js"></script>
+    <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.min.js"></script>
+
 
     <!-- CONFIGS -->
     <script src="app/app.js"></script>
@@ -37,8 +44,7 @@
 
     <!-- DIRECTIVES -->
     <script type="text/javascript" src="app/directives/generalWeather.js"></script>
-
-
+    <script src="app/vs-google-autocomplete.js"></script>
 
 
 </body>

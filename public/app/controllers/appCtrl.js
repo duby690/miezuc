@@ -9,5 +9,7 @@
 
   function AppCtrl($scope, $window) {
       console.log('Hello Miezuc!');
+
+    
     };
 }());
