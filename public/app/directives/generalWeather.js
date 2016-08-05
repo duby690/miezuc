@@ -19,6 +19,7 @@
             method: 'GET',
             url: myUrl
           }
+
           scope.weatherDesc = "";
           scope.weatherTemp = "";
 
