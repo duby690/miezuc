@@ -3,3 +3,7 @@
   float: left;
   margin-right: 18px;
 }
+
+.user {
+    display: none;
+}
