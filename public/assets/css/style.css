@@ -1,3 +1,7 @@
+html {
+  font-weight: 600;
+}
+
 .degree-celsius {
   font-size: 40px;
   float: left;

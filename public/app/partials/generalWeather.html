@@ -13,13 +13,17 @@
     </div>
   </div>
 </div>
-<div class="row">
+<div class="row" ng-if="weather">
   <div class="col s8">
-    <h4>{{city}}</h4>
+    <h4>{{weather.name}}</h4>
   </div>
   <div class="col s4">
-    <span class="red-text text-darken-4 degree-celsius">{{weatherTemp}}
+    <span class="red-text text-darken-4 degree-celsius">{{weather.main.temp}}
     </span>
     <img ng-if="city" src="assets/images/material-weather-icons/64/40.png" alt="img">
   </div>
+  <p>Humidity: {{weather.main.humidity}}%</p>
+  <p>Pressure: {{weather.main.pressure}}</p>
+  <p>Weather description: {{weather.weather[0].description}}</p>
+  <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>extended forecast</a>
 </div>
