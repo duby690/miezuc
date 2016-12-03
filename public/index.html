@@ -4,15 +4,13 @@
   <meta charset="UTF-8">
   <title>Miezuc app</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="bower_components/materialize/bin/materialize.css" />
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" />
   <link rel="shortcut icon" type="image/png" href="favicon-32x32.png"/>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
   <!-- vsGoogleAutocomplete -->
-
 </head>
 <body>
-    <h3>Andrei</h3>
     <ul id="slide-out" class="side-nav">
       <li><div class="userView">
         <a href="#!name"><span class="name">John Doe</span></a>
@@ -21,6 +19,7 @@
       <li><a href="#!"><i class="material-icons">cloud</i>Miezuc</a></li>
       <li><a href="/#/">home</a></li>
       <li><a href="/#/weather">Weather</a></li>
+      <li><a href="/#/ioanaweather">ioanaweather</a></li>
       <li><div class="divider"></div></li>
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
@@ -28,11 +27,7 @@
     <div class="container">
       <div ui-view>
       </div>
-      <div class="user">
-          <p>User Name:</p>
-      </div>
     </div>
-    <button type="button" name="button" class="btn">ajax request</button>
 
     <!-- LIBS -->
 
@@ -59,6 +54,8 @@
     <!-- Generic -->
     <script type="text/javascript" src="app/controllers/appCtrl.js"></script>
     <script type="text/javascript" src="app/controllers/weather/weatherCtrl.js"></script>
+    <script type="text/javascript" src="app/controllers/weather/ioanaWeatherCtrl.js"></script>
+
 
     <!-- DIRECTIVES -->
     <script type="text/javascript" src="app/directives/generalWeather.js"></script>

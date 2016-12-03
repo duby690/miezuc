@@ -14,15 +14,24 @@
         scope.change = function() {
           var myUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + scope.city + '&units=metric&APPID=e172458e0763cbf1d014e6d00427937a';
 
-          var req = {
-            method: 'GET',
-            url: myUrl
-          }
-
-          $http(req).then(function(res){
-            scope.weather = res.data;
-            console.log(res.data);
-          }, function(){});
+          $.ajax({
+              url: myUrl,
+              type: 'GET',
+              dataType: 'json',
+              success: function(data){
+                  console.log(data);
+                  // console.log(data);
+              }
+          });
+        //   var req = {
+        //     method: 'GET',
+        //     url: myUrl
+        //   }
+          //
+        //   $http(req).then(function(res){
+        //     scope.weather = res.data;
+        //     console.log(res.data);
+        //   }, function(){});
           console.log(scope);
           scope.options = {
             types: ['(cities)'],

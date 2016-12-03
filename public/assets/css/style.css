@@ -11,3 +11,12 @@ html {
 .user {
     display: none;
 }
+
+.weather-image {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-item {
+    display: none;
+}
