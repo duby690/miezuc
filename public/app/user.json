@@ -1,5 +1,16 @@
-{"employees":[
-    {"firstName":"Andrei", "lastName":"Dubau"},
-    {"firstName":"Ioana", "lastName":"Dubau"},
-    {"firstName":"Ami", "lastName":"Dubau"}
-]}
+{
+  "users": [
+        {
+          "id": 0,
+          "name": "Andrei Dubau",
+          "phone": "0740-017036",
+          "email": "andrei.dubau@gmail.com"
+      },
+      {
+        "id": 1,
+        "name": "Ioana Dubau",
+        "phone": "0749-668095",
+        "email": "ioana.dubau@gmail.com"
+      }
+    ]
+}
