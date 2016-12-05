@@ -44,6 +44,16 @@
             controller: 'IoanaWeatherCtrl',
             templateUrl: 'app/partials/ioanaweather.html'
           })
+          .state('game', {
+            url: '/game',
+            controller: 'GameCtrl',
+            templateUrl: 'app/partials/game.html'
+          })
+          .state('contacts', {
+            url: '/contacts',
+            controller: 'ContactsCtrl',
+            templateUrl: 'app/partials/contacts.html'
+          })
 
 
         $urlRouterProvider.otherwise('/');

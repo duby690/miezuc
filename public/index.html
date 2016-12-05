@@ -20,6 +20,8 @@
       <li><a href="/#/">home</a></li>
       <li><a href="/#/weather">Weather</a></li>
       <li><a href="/#/ioanaweather">ioanaweather</a></li>
+      <li><a href="/#/weather">Weather</a></li>.
+      <li><a href="/#/game">game</a></li>
       <li><div class="divider"></div></li>
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
@@ -53,14 +55,26 @@
     <!-- CONTROLLERS -->
     <!-- Generic -->
     <script type="text/javascript" src="app/controllers/appCtrl.js"></script>
+    <script type="text/javascript" src="app/controllers/gameCtrl.js"></script>
+    <script type="text/javascript" src="app/controllers/contactsCtrl.js"></script>
     <script type="text/javascript" src="app/controllers/weather/weatherCtrl.js"></script>
     <script type="text/javascript" src="app/controllers/weather/ioanaWeatherCtrl.js"></script>
-
 
     <!-- DIRECTIVES -->
     <script type="text/javascript" src="app/directives/generalWeather.js"></script>
     <script src="app/vs-google-autocomplete.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBzyYVzK1SxWPiPtSHecwD7xGLBIbxhm5s",
+        authDomain: "contactos-afbe1.firebaseapp.com",
+        databaseURL: "https://contactos-afbe1.firebaseio.com",
+        storageBucket: "contactos-afbe1.appspot.com",
+        messagingSenderId: "442842305919"
+      };
+      firebase.initializeApp(config);
+    </script>
 
 </body>
 </html>
