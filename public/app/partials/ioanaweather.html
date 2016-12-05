@@ -3,37 +3,37 @@
 <button type="button" name="button" class="get-weather-button btn">get weather</button>
 <p class="error-message"></p>
 
-<div class="weather-item">
-    <h3 class="city-name">City name: <b></b></h3>
-    <h5 class="max-temp">Max temp: <b></b></h5>
-    <h5 class="min-temp">Min temp: <b></b></h5>
-    <img class="weather-image-first" src="">
-    <div class="row extended-weather">
-        <!-- <div class="col-sm-2 second-day">
-            <p class="extended-max">Max temp: <span></span></p>
-            <p class="extended-min">Min temp: <span></span></p>
-            <img class="weather-image" src="">
+<div class="weather-item container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3 class="city-name">
+                <b></b>
+                <span class="country-code"></span>
+                <img class="weather-image-first" src="">
+            </h3>
+            <span class="main-weather"></span>
+        </div>
+        <div class="col-sm-6 right-main-weather">
+            <span class="weekday"><b></b></span>
+            <h5 class="max-temp">Max temp: <b></b></h5>
+            <h5 class="min-temp">Min temp: <b></b></h5>
+            <h5 class="current-temp">Current-temp: <b></b></h5>
+            <h5 class="humidity">Humidity: <b></b></h5>
+            <h5 class="pressure">Pressure: <b></b></h5>
+            <h5 class="wind">Wind: <b></b></h5>
+        </div>
 
-        </div>
-        <div class="col-sm-2 third-day">
-            <p class="extended-max">Max temp: <span></span></p>
-            <p class="extended-min">Min temp: <span></span></p>
-            <img class="weather-image" src="">
-        </div>
-        <div class="col-sm-2 fourth-day">
-            <p class="extended-max">Max temp: <span></span></p>
-            <p class="extended-min">Min temp: <span></span></p>
-            <img class="weather-image" src="">
-        </div>
-        <div class="col-sm-2 five-day">
-            <p class="extended-max">Max temp: <span></span></p>
-            <p class="extended-min">Min temp: <span></span></p>
-            <img class="weather-image" src="">
-        </div>
-        <div class="col-sm-2 six-day">
-            <p class="extended-max">Max temp: <span></span></p>
-            <p class="extended-min">Min temp: <span></span></p>
-            <img class="weather-image" src="">
-        </div> -->
     </div>
+
+
+    <div class="seven-days">
+        <h2>Extended weather for the next 6 days</h2>
+    </div>
+
+
+    <div class="row extended-weather">
+
+    </div>
+
 </div>
+<button type="button" name="button" class="reset">RESET</button>
